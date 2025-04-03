@@ -1,7 +1,8 @@
 CC = gcc
 CFLAGS = -Wall -Wextra -pedantic
+TARGET = hola
 
-all: hola
+all: $(TARGET)
 
 hola: hola.o	
 	$(CC) $(CFLAGS) hola.o -o hola
