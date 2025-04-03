@@ -42,5 +42,13 @@ int main() {
     a%=b;
     printf("a resto b: %d \n", a);
 
+    //diferencia entre ++i y i++?
+
+    int i = 1;
+
+    printf("valor de i++: %d valor de i: %d \n", i++, i); //i++ incrementa a i en 1 pero retorna el i viejo
+
+    printf("valor de ++i: %d valor de i: %d \n", ++i, i); //++i retorna el nuevo valor tmb
+
     return 0;
 }
