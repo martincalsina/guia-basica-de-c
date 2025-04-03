@@ -1,13 +1,13 @@
 CC = gcc
 CFLAGS = -Wall -Wextra -pedantic
 
-all: casts
+all: mensaje_secreto
 
-casts: casts.o
-	$(CC) $(CFLAGS) casts.o -o casts
+mensaje_secreto: mensaje_secreto.o
+	$(CC) $(CFLAGS) mensaje_secreto.o -o mensaje_secreto
 
-casts.o: casts.c
-	$(CC) $(CFLAGS) -c casts.c -o casts.o
+mensaje_secreto.o: mensaje_secreto.c
+	$(CC) $(CFLAGS) -c mensaje_secreto.c -o mensaje_secreto.o
 
 clean: 
 	rm *.o hola
