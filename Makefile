@@ -1,13 +1,13 @@
 CC = gcc
 CFLAGS = -Wall -Wextra -pedantic
 
-all: datasize
+all: casts
 
-datasize: datasize.o
-	$(CC) $(CFLAGS) datasize.o -o datasize
+casts: casts.o
+	$(CC) $(CFLAGS) casts.o -o casts
 
-datasize.o: datasize.c
-	$(CC) $(CFLAGS) -c datasize.c -o datasize.o
+casts.o: casts.c
+	$(CC) $(CFLAGS) -c casts.c -o casts.o
 
 clean: 
 	rm *.o hola
