@@ -1,6 +1,6 @@
 CC = gcc
 CFLAGS = -Wall -Wextra -pedantic
-TARGET = funcionrara
+TARGET = funcionrara2
 
 all: $(TARGET)
 
