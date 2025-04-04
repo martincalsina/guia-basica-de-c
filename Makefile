@@ -1,6 +1,6 @@
 CC = gcc
 CFLAGS = -Wall -Wextra -pedantic
-TARGET = arrays
+TARGET = rotatearray
 
 all: $(TARGET)
 
