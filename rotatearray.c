@@ -7,9 +7,10 @@ int main() {
     size_t length = sizeof(a) / sizeof(int); //longitud de a
 
     int b[length];
-
-    for (int i = 0; i < length; i++) {
-        b[length-i-1] = a[i];
+    
+    b[0] = a[length-1];
+    for (int i = 0; i < length-1; i++) {
+        b[i+1] = a[i];
     }
 
     printf("Array antes \n");
