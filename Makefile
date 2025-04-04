@@ -1,6 +1,6 @@
 CC = gcc
 CFLAGS = -Wall -Wextra -pedantic
-TARGET = controlst
+TARGET = arrays
 
 all: $(TARGET)
 
