@@ -1,13 +1,13 @@
 CC = gcc
 CFLAGS = -Wall -Wextra -pedantic
 
-all: operators
+all: checkupperlower
 
-operators: operators.o
-	$(CC) $(CFLAGS) operators.o -o operators
+checkupperlower: checkupperlower.o
+	$(CC) $(CFLAGS) checkupperlower.o -o checkupperlower
 
-operators.o: operators.c
-	$(CC) $(CFLAGS) -c operators.c -o operators.o
+checkupperlower.o: checkupperlower.c
+	$(CC) $(CFLAGS) -c checkupperlower.c -o checkupperlower.o
 
 clean: 
 	rm *.o hola
