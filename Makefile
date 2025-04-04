@@ -1,6 +1,6 @@
 CC = gcc
 CFLAGS = -Wall -Wextra -pedantic
-TARGET = shadowing
+TARGET = factorial
 
 all: $(TARGET)
 
