@@ -1,6 +1,6 @@
 CC = gcc
 CFLAGS = -Wall -Wextra -pedantic
-TARGET = alcholico
+TARGET = ej20
 
 all: $(TARGET)
 
