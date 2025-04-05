@@ -2,6 +2,7 @@
 
 int main() {
     a();
+    b();
 }
 
 /*Al momento de convertir los archivos .c a .o lenguaje de maquina,
