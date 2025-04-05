@@ -2,19 +2,18 @@ CC = gcc
 CFLAGS = -Wall -Wextra -pedantic
 TARGET = binario
 
+OBJS = $(SRCS:.c=.o)
+
+
 all: $(TARGET)
 
-$(TARGET): funca.o funcb.o main.o
+$(TARGET): $(OBJS)
 	$(CC) $(CFLAGS) $^ -o $@
 
-main.o: main.c
+%.o: %.c
 	$(CC) $(CFLAGS) -c $< -o $@
 
-funca.o: funca.c
-	$(CC) $(CFLAGS) -c $< -o $@
-
-funcb.o: funcb.c
-	$(CC) $(CFLAGS) -c $< -o $@
+-include $(OBJS:.o=.d)
 
 clean:
 	rm *.o $(TARGET)
